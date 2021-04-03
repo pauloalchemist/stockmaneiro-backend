@@ -1,9 +1,9 @@
 const routes = require('express').Router()
+const expirationDate = require('./data/productData')
 
-routes.get('/', (req, res) => {
-  return res.send(
-    '\n Bem-vindos ao StockManeiro! \n Vamos otimizar a sua gestão de estoque! \n'
-  )
+routes.get('/product/expirationdate', async (req, res) => {
+  const productExpirationDate = await expirationDate.getProductForExpirationDate()
+  res.json(productExpirationDate.rows)
 })
 
 module.exports = routes
