@@ -2,10 +2,10 @@
   "name": "api-stockmaneiro",
   "version": "1.0.0",
   "engines": {
-    "node": "14.15.1"
+    "node": "14.15.4"
   },
   "author": {
-    "name": "paulo giovvani",
+    "name": "paulo giovani",
     "email": "paulolinsdev@gmail.com"
   },
   "license": "MIT",
